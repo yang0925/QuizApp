@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.activity
 
 import android.content.Intent
 import android.graphics.Color
@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.example.quizapp.Constants
+import com.example.quizapp.Question
+import com.example.quizapp.R
 import kotlinx.android.synthetic.main.activity_quiz_questions.*
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
@@ -70,7 +72,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             option.typeface = Typeface.DEFAULT
             option.background = ContextCompat.getDrawable(
                 this,
-                R.drawable.default_option_border_bg
+                    R.drawable.default_option_border_bg
             )
         }
     }
@@ -158,7 +160,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.background = ContextCompat.getDrawable(
             this,
-            R.drawable.selected_option_border_bg
+                R.drawable.selected_option_border_bg
         )
     }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize">
@@ -21,13 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".QuizQuestionsActivity"
+            android:name=".activity.QuizQuestionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
         </activity>
         <activity
-            android:name=".ResultActivity"
+            android:name=".activity.ResultActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
